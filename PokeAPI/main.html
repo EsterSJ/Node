@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemania</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="buscador">
+            <div class="formulario">
+                <img class="title" src="img/pokemon.png" alt="">
+                <div class="inputs">
+                    <input type="text" id="name" placeholder="Encuentra tu pokemon">
+                    <button type="reset" onclick="buscaPokemon()">BUSCAR</button>
+                </div>
+            </div>
+            <div class="info_pokemon">
+                <table id="tabla_habilidades"></table>
+            </div>
+        </div>
+        <footer>
+            <p>Diseñado y desarrollado por Ester Sánchez Jiménez - 2023</p>
+        </footer>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

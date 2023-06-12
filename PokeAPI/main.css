@@ -1,0 +1,169 @@
+/* limpiadores */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url("img/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-size: 100% 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.buscador{
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.title{
+    height: 20vh;
+    width: 30vw;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+    input{
+        height: 40px;
+        width: 400px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    button{
+        height: 40px;
+        width: 400px;
+        border-radius: 4px;
+        border-color: #1465bb;
+        color: #1465bb;
+        font-weight: bold;
+        background-color: #ffca1a;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+.info_pokemon{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+    tbody { 
+        font-size: 26px; 
+    }
+
+    th{
+        border: 1px solid white;
+        border-radius: 4px;
+        color: white;
+        font-weight: bold;
+        background-color: rgba(0,0,0,0.7);
+        padding: 4px;
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+    }
+
+footer{
+    height: 5vh;
+    width: 100vw;
+    color: white;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: right; 
+}
+
+/* media queries */
+@media screen and (width <= 975px) {
+    .buscador{
+        height: 95vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 30px;
+    }
+
+    .title{
+        height: 20vh;
+        width: 80vw;
+        margin-top: 20;
+    }
+
+    input{
+        height: 50px;
+        width: 420px;
+    }
+
+    button{
+        height: 50px;
+        width: 420px;
+    }
+}
+
+@media screen and (width <= 450px) {
+
+    .title{
+        height: 20vh;
+        width: 80vw;
+        margin-top: 20;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    input{
+        height: 30px;
+        width: 220px;
+    }
+
+    button{
+        height: 30px;
+        width: 220px;
+    }
+
+    tbody { 
+        font-size: 14px; 
+    }
+
+    img{
+        width: 160px;
+        height: 160px;
+    }
+}
